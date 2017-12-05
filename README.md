@@ -15,6 +15,6 @@ python
 
 And execute the following sample command:
 ```python
-from manageiq_graphql_client.graphql import ManageiqGraphQLClient
-ManageiqGraphQLClient.query('{ vms { name } }')
+from manageiq_graphql.client import ManageIQGraphQLClient
+ManageIQGraphQLClient.query('{ vms { name } }')
 ```

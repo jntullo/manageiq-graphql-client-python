@@ -7,14 +7,13 @@ from setuptools import setup
 
 setup(
     name="manageiq-graphql-client-python",
-    use_scm_version=True,
     author="Jillian Tullo",
     author_email="jtullo@redhat.com",
     description="Python client for the ManageIQ GraphQL API",
     license="GPLv2",
     keywords=['api', 'graphql', 'client', 'manageiq'],
     url="https://github.com/jntullo/manageiq-graphql-client-python",
-    packages=["manageiq_graphql_client"],
+    packages=["manageiq_graphql"],
     package_dir={'': 'src'},
     install_requires=[
     ],

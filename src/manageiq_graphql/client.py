@@ -5,4 +5,6 @@ class ManageIQGraphQLClient(object):
 
   @classmethod
   def query(cls, query):
+    if 'documentName' in query:
+      query = open('queries/' + query['documentName'] + '.graphql', 'r').read()
     return cls.client.execute(query)
